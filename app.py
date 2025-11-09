@@ -11,7 +11,7 @@ API_KEY = st.secrets.tool_auth.gemini_api_key
 # Using a model known for strong reasoning and grounding
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent"
 MODEL_NAME = "gemini-2.5-flash-preview-05-20"
-MAX_RETRIES = 5
+MAX_RETRIES = 10
 
 # --- Core LLM Function with Google Search Grounding ---
 
