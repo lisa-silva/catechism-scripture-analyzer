@@ -7,7 +7,7 @@ from typing import Dict, Any, List
 # --- Configuration ---
 # Read the API key from the standard Streamlit secrets configuration
 # NOTE: If you are running this locally, you must have the .streamlit/secrets.toml file setup.
-API_KEY = st.secrets.tool_auth.gemini_api_key
+API_KEY = st.secrets["GEMINI_API_KEY"]
 # Using a model known for strong reasoning and grounding
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent"
 MODEL_NAME = "gemini-2.5-flash-preview-05-20"
